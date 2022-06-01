@@ -1,0 +1,926 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "FuturaBook";
+	src:url(../fuentes/FuturBo_OT.otf)format("opentype");
+}
+
+@font-face{
+	font-family: "MyriadProRegular";
+	src:url(../fuentes/MYRIADPRO-REGULAR.OTF);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	/*color: #aeaeae;*/
+	color: #535353;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat;
+}
+
+#bodyS21{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+
+#contenidoPage{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	/*min-height:500px;*/
+}
+
+.pad50_left{
+	padding-left:50px;
+}
+
+.pad70_left{
+	padding-left:70px;
+}
+
+.pad25_right{
+	padding-right:25px;
+}
+
+a, a:link, a:visited { 
+	color: #298bff; 
+	text-decoration: none; 
+}
+
+a:hover { 
+	text-decoration: underline; 
+}
+
+p { 
+	margin: 0px; 
+	padding: 0; 
+}
+
+img { 
+	border: none; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	/*color: #59aaff; */
+	color: #18B4CD;
+}
+
+h1 { 
+	font-size: 40px; 
+	font-weight: normal; 
+	margin: 0 0 0 0; 
+	padding: 5px 0; 
+}
+
+h2 { 
+	font-size: 28px; 
+	font-weight: normal; 
+	margin: 0 0 30px 0; 
+	padding: 0; /* text-shadow: 1px 1px 2px #000; */ 
+}
+
+h3 { 
+	font-size: 21px; 
+	margin: 0 0 15px 0; 
+	padding: 0; 
+	padding: 0; 
+	font-weight: normal; 
+	color: #18B4CD; 
+}
+
+h4 { 
+	font-size: 18px; 
+	margin: 0 0 15px 0; 
+	padding: 0; 
+}
+
+h5 { 
+	font-size: 16px; 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+	color: #ccc; 
+}
+
+h6 { 
+	font-size: 14px; 
+	margin: 0 0 5px 0; 
+	padding: 0; 
+	//color: #ccc; 
+	color: #535353;
+}
+
+.linea {
+	background-image:url(../images/linea_separador.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	/*background-size:contain;*/
+}
+
+.cleaner { 
+	clear: both; 
+	width: 100%; 
+	height: 0px; 
+	font-size: 0px;  
+}
+
+.cleaner_h10 { 
+	clear: both; 
+	width:100%; 
+	height: 10px; 
+}
+
+.cleaner_h20 { 
+	clear: both; 
+	width:100%; 
+	height: 20px; 
+}
+
+.cleaner_h30 { 
+	clear: both; 
+	width:100%; 
+	height: 30px; 
+}
+
+.cleaner_h40 { 
+	clear: both; 
+	width:100%; 
+	height: 40px; 
+}
+
+.cleaner_h50 { 
+	clear: both; 
+	width:100%; 
+	height: 50px; 
+}
+
+.cleaner_h60 { 
+	clear: both; 
+	width:100%; 
+	height: 60px; 
+}
+
+.float_l { 
+	float: left; 
+}
+
+.float_r { 
+	float: right; 
+}
+
+.centrar {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.image_fl { float: left; margin: 3px 15px 0 0; }
+.image_fr { float: right; margin: 3px 0 0 15px; }
+
+.noenlace:hover {
+	text-decoration:none;
+}
+
+/***** header *****/
+#logo{
+	display: block;
+	width: 400px;
+	height: 150px;
+	text-indent: -9999px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+}
+
+/***** Menu *****/
+
+#menuSombra{
+
+	height:70px;
+	background-image:url(../images/menu_sombra.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+
+#menuWrapper {
+width:780px; /* Ancho del menú */
+height:55px;
+padding-left:35px;
+background:#FFF; /* Color de fondo */
+border-radius:40px; /* Bordes redondeados de la barra principal */
+}
+.menu {
+padding:0;
+margin:0;
+list-style:none;
+height:55px;
+position:relative;
+z-index:955;
+font-family:arial, verdana, sans-serif;
+}
+.menu li:hover li a {
+background-color:#696A6D; /* color para los submenus */
+}
+.menu li.top {display:block; float:left;}
+.menu li a.top_link { /* items del menu */
+	display: block;
+	float: left;
+	height: 55px;
+	line-height: 54px;
+	color: #333; /* color letra no seleccionada */
+	text-decoration: none;
+	text-transform:uppercase;
+	font-family: "FuturaBook",sans-serif;
+	font-size: 13.63px; /* Tamaño de la fuente */
+	/*font-weight: bold;*/
+	padding: 0 0 0 12px;
+	cursor: pointer;
+}
+.menu li a.top_link span { /* pestaña normal */
+float:left;
+display:block;
+padding:0 24px 0 12px;
+height:55px;
+}
+.menu li a.top_link span.down { /* pestaña con submenu */
+float:left;
+display:block;
+padding:0 24px 0 12px;
+height:55px;
+}
+
+.menu li a.top_link:hover, .menu li:hover > a.top_link {color:#fff; background-color:#e6412c } /* cuando se esta señalando una pestaña */
+.menu li:hover {position:relative; z-index:2;}
+.menu ul, 
+.menu li:hover ul ul,
+.menu li:hover ul li:hover ul ul,
+.menu li:hover ul li:hover ul li:hover ul ul,
+.menu li:hover ul li:hover ul li:hover ul li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+.menu li:hover ul.sub {
+left:0;
+top:55px;
+background-color:#696A6D; /* Color de fondo del submenú */
+padding:3px;
+white-space:nowrap;
+width:200px;
+height:auto;
+z-index:3;
+}
+.menu li:hover ul.sub li {
+display:block;
+height:30px;
+position:relative;
+float:left;
+width:200px;
+font-weight:normal;
+}
+.menu li:hover ul.sub li a{
+display:block;
+height:30px;
+width:200px;
+line-height:30px;
+text-indent:5px;
+color:#ccc;
+text-decoration:none;
+}
+.menu li ul.sub li a.fly {
+/* Color de fondo del submenú */
+background-color:#696A6D;
+cursor: pointer;}
+.menu li:hover ul.sub li a:hover {
+background-color:#e6412c; /* Color de fondo al pasar el cursor */
+color:#fff;
+}
+.menu li:hover ul.sub li a.fly:hover, .menu li:hover ul li:hover > a.fly {
+/* Color de fondo al pasar el cursor */
+background:#e6412c; color:#fff;}
+
+.menu li:hover ul li:hover ul,
+.menu li:hover ul li:hover ul li:hover ul,
+.menu li:hover ul li:hover ul li:hover ul li:hover ul,
+.menu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul {
+left:200px;
+top:-4px;
+background: #696A6D; /* Color de fondo del submenú */
+padding:3px;
+white-space:nowrap;
+width:200px;
+z-index:4;
+height:auto;
+}
+
+/***** Footer *****/
+
+#footerrojo{
+	background-color:#E4412B;
+	width:100%;
+	min-height:200px;
+}
+
+.col_izq{
+	width:200px;
+	height:200px;
+	float:left;
+}
+	
+	.col_izq p{
+		padding-left:40px;
+		padding-top:30px;
+	}
+
+	.col_izq p a{
+		font-family:Arial, sans-serif;
+		font-size:12px;
+		text-transform:uppercase;
+		/*font-weight:bold;*/
+		color:#FFF;
+		line-height:24px;
+		cursor:pointer;
+	}
+	
+	.col_izq p a:hover{
+		/*font-family:Arial, sans-serif;
+		font-size:15px;
+		text-transform:uppercase;*/
+		font-weight:bold;
+		color:#000;
+		text-decoration:none;
+		/*line-height:28px;
+		cursor:pointer;*/
+	}
+	
+.col_med{
+	width:400px;
+	height:200px;
+	float:left;
+}
+
+	.tituloFooter{
+		color:#FFF;
+		font-family:"FuturaBook";
+		font-size:18px;
+		padding-top:20px;
+	}
+	
+	.imagFooter{
+		padding-top:10px;
+		width:110px;
+	}
+	
+	.col_med p{
+		padding-left: 120px;
+		font-family: Arial, sans-serif;
+		font-size: 12px;
+		color: #FFF;
+		line-height:15px;
+	}
+
+.col_der{
+	width:300px;
+	height:200px;
+	float:left;
+}
+	.col_der table th{
+		width:50px;
+	}
+	
+	.formContacto{
+		padding-top:20px;
+	}
+	
+	.formContacto label{
+		color:#FFF;
+		font-size:12px;
+	}
+	
+	.formContacto input,.formContacto textarea{
+		height:22px;
+		width:200px;
+		border-color:#CCC;
+		border-radius:3px;
+		border-style:solid;
+		font-size:12px;
+		/*border:solid 1px;*/
+	}
+	
+	.formContacto textarea{
+		height:50px;
+	}
+	
+	.formContacto th{
+		text-align:left;
+	}
+	
+	#btnFooter{
+		width:100px;
+	}
+
+#footernegro{
+	background-color:#000;
+	width:100%;
+	height:60px;
+	
+	line-height:59px;
+	font-weight:bold;
+	color:#FFF;
+}
+
+	#footernegro span{
+		color:#e6412c;
+	}
+	
+	#logoFooter{
+		padding-left:25px;
+		padding-top:10px; 
+		padding-right:25px;
+	}
+
+/*******************CONTENIDO***********************/
+
+#contArt{
+	font-family:"FuturaBook";
+	font-size:22px;
+	color:#888888;
+}
+
+#fraseArt{
+	font-family:"FuturaBook";
+	font-size:30px;
+}
+
+#fraseArt span{
+	font-family:"FuturaBook";
+	font-size:34px;
+	font-weight:bold;
+	color:#e4412b;
+}
+
+#textArt{
+	font-family:"FuturaBook";
+	color:#a7a7a7;
+	font-size:22px;
+}
+
+#tituloMyriad{
+	font-family:"MyriadProRegular";
+	font-size:36px;
+}
+
+#nuestrosClientes{
+	background-image:url(../images/nuestros_clientes.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	height:105px;
+	
+}
+
+#bloque{
+	width:400px;
+	height:300px;
+	float:left;
+	/*padding-left:70px;
+	padding-right:70px;*/
+	background-image:url(../images/bloque.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+	.bloqueTitulo{
+		font-family:"FuturaBook";
+		font-size:24px;
+		text-align:center;
+		text-transform:uppercase;
+		color:#FFF;
+		
+		padding-top:32px;
+		padding-bottom:15px;
+	}
+	
+	.bloqueContenido{		
+		padding-top:10px;
+		padding-left:60px;
+		padding-right:45px;
+	}
+	
+	.bloqueTexto{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:11px;
+		text-align:left;
+		height:210px;
+		padding-right:15px;
+		overflow-y:scroll;
+	}
+	
+	.bloqueTexto p{
+		color:#e4412b;
+		font-weight:bold;
+		font-size:12px;
+	}
+	
+	.bloqueTexto p span{
+		text-align:right;
+		font-style:italic;
+		color:#000;
+		font-weight:bold;
+		font-size:12px;
+	}
+	
+	.bloqueTexto2{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#e4412b;
+		text-align:left;
+		font-weight:bold;
+		height:210px;
+		padding-right:15px;
+		overflow-y:scroll;
+	}
+	
+	.bloqueTexto2 p{
+		color:#888888;
+		font-style:italic;
+		font-size:14px;
+	}
+	
+/*Slider index (fondo)*/
+#sliderIndex{
+	background-image:url(../images/fondo_slider.png);
+	width:700px;
+	height:303px;
+	background-size:contain;
+	margin: 0 auto;
+}
+
+#tituloSlider{
+	font-family:"FuturaBook";
+	font-size:42px;
+	color:#888888;
+	font-weight:bold;
+}
+
+#textoSlider{
+	font-family:"FuturaBook";
+	font-size:14px;
+	color:#444444;
+}
+
+/*********************************/
+
+.textoGeneral{
+	font-family:"FuturaBook";
+	font-size:18px;
+	color:#444444;
+	text-align:justify;
+	line-height:28px;
+}
+
+.textoGeneral a{
+	color:#e4412b;
+}
+
+.textoMayuscula{
+	text-transform:uppercase;
+}
+
+.tituloGeneral{
+	font-family:"FuturaBook";
+	font-size:23px;
+	font-weight:bold;
+	color:#e4412b;
+	text-transform:uppercase;
+}
+
+/****** SLIDER QUIENES SOMOS *********/
+
+#sliderQuienesSomos{
+	height:330px;
+	width:800px;
+	position:relative
+}
+
+#sliderQuienesSomos .arrow{
+	/* The two arrows */
+	width:44px;
+	height:44px;
+	background:url('../images/arrows.png') no-repeat;
+	position:absolute;
+	top:50%;
+	margin-top:-22px;
+	left:0;
+	cursor:pointer;
+}
+
+#sliderQuienesSomos .next{
+	/* Individual styles for the next icon */
+	background-position:right top;
+	left:auto;
+	right:0;
+}
+
+#sliderQuienesSomos .arrow:hover{
+	background-position:left bottom;
+}
+
+#sliderQuienesSomos .next:hover{
+	background-position:right bottom;
+}
+
+/*************************************************/
+
+#textoPasos{
+	font-size:16px;
+}
+
+.seleccionable{
+	cursor:pointer;
+}
+
+/*************************************************/
+
+.tituloPagEvento{
+	font-family:"FuturaBook";
+	font-size:32px;
+	font-weight:bold;
+	color:#e4412b;
+	
+	line-height:40px;
+	margin-bottom:25px;
+}
+
+.subtituloPagEvento{
+	font-family:"FuturaBook";
+	font-size:22px;
+	font-weight:bold;
+	color:#000;
+	text-transform:uppercase;
+	
+	line-height:26px;
+}
+
+.textoPagEvento{
+	font-size:14px;
+	font-weight:normal;
+	color:#545454;
+}
+
+.imagPagEvento{
+	width:100%;
+}
+
+/*******************Fuera de Garantia*****************/
+
+.contenidoFG{
+	color:#FFF;
+	font-family:"FuturaBook";
+	border-spacing:0px;
+}
+			
+.cuerpoOpcFG{
+	width:425px;
+	height:152px;
+	vertical-align:middle;
+	background-size:contain;
+	padding-top:0px;
+	padding-left:25px;
+	padding-right:0px;
+	padding-bottom:0px;
+	cursor:default;
+	font-size:18px;
+	line-height:26px;
+}
+
+.cuerpoder{
+	background-image:url(../images/derecha_cont.png);
+}
+
+.cuerpoizq{
+	background-image:url(../images/izquierda_cont.png);
+}
+			
+.cabeceraOpcFG{
+	font-size: 65px;
+	
+	height: 94px;
+	vertical-align:top;
+	background-repeat: no-repeat;
+	padding-top:58px;
+	padding-right:0px;
+	padding-bottom:0px;
+	cursor:pointer;
+}
+
+.cabecerader{
+	background-image: url(../images/derecha_roja.png);
+	width: 166px;
+	padding-left:65px;
+}
+
+.cabeceraizq{
+	background-image: url(../images/izquierda_roja.png);
+	width: 111px;
+	padding-left:120px;
+}
+
+.filaEspacio{
+	height:10px;
+}
+
+/*************************************/
+
+#mapadelsitio{
+	padding-left:100px;
+	cursor:default;
+}
+
+#mapadelsitio a:hover{
+	color:#e4412b;
+	cursor:pointer;
+}
+
+.tituloMapaSitio{
+	font-family:"FuturaBook";
+	font-size:23px;
+	font-weight:bold;
+	color:#e4412b;
+	text-transform:uppercase;
+}
+
+.subtituloMapaSitio{
+	font-family:"FuturaBook";
+	font-size:20px;
+	color:#444444;
+	text-align:justify;
+	line-height:28px;
+}
+
+.negrita{
+	font-weight:bold;
+}
+
+/*****Periodos Vigencia Garantia*****/
+#tbPVG td{
+	vertical-align:text-top;
+}
+
+.cell_izq_sup{
+	width:15px;
+	height:15px;
+	background-repeat:no-repeat;
+	background-image:url(../images/izq_sup.png);
+}
+
+.cell_med_sup{
+	height:15px;
+	background-repeat:repeat-x;
+	background-image:url(../images/med_sup.png);
+}
+
+.cell_der_sup{
+	width:15px;
+	height:15px;
+	background-repeat:no-repeat;
+	background-image:url(../images/der_sup.png);
+}
+
+.cell_izq_inf{
+	width:15px;
+	height:15px;
+	background-repeat:no-repeat;
+	background-image:url(../images/izq_inf.png);
+}
+
+.cell_med_inf{
+	height:15px;
+	background-repeat:repeat-x;
+	background-image:url(../images/med_inf.png);
+}
+
+.cell_der_inf{
+	width:15px;
+	height:15px;
+	background-repeat:no-repeat;
+	background-image:url(../images/der_inf.png);
+}
+
+.cell_izq_med{
+	width:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/izq_med.png);
+}
+
+.cell_der_med{
+	width:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/der_med.png);
+}
+
+.cell_med_med{
+	width:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/med_med.png);
+}
+
+.cell_tit_med_med{
+	background-repeat:repeat;
+	background-image:url(../images/tit_med_med.png);
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+}
+
+.cell_tit_izq_med{
+	width:15px;
+	height:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/tit_izq_med.png);
+}
+
+.cell_tit_der_med{
+	width:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/tit_der_med.png);
+}
+
+.cell_tit_izq_med_med{
+	width:15px;
+	background-repeat:repeat-y;
+	background-image:url(../images/tit_izq_med_med.png);
+}
+
+.cell_tit_med_inf{
+	width:15px;
+	height:15px;
+	background-repeat:no-repeat;
+	background-image:url(../images/tit_med_inf.png);
+}
+
+/*****************SOPORTE TECNICO*********************/
+
+.tdTituloSopTec{
+	width:180px;
+	height:150px;
+	padding:10px;
+	color:#FFF;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.fondoRojo{
+	background-color:#e4412b;
+}
+
+.fondoGris{
+	background-color:#909092;
+}
+
+.tdContenidoSopTec{
+	padding-top:25px;
+}
+
+/*****************Consulta Online*********************/
+
+.conson_datos_cab{
+	background-image:url(../images/datos_cab.png); 
+	background-position:center; 
+	background-repeat:no-repeat;
+}
+
+.conson_datos_med{
+	background-image:url(../images/datos_med.png); 
+	background-position:center; 
+	background-repeat:repeat-y;
+}
+
+.conson_datos_pie{
+	background-image:url(../images/datos_pie.png); 
+	background-position:center; 
+	background-repeat:no-repeat;
+}
+
+.conson_estados_cab{
+	background-image:url(../images/estados_cab.png); 
+	background-position:center; 
+	background-repeat:no-repeat;
+}
+
+.conson_estados_med{
+	background-image:url(../images/estados_med.png); 
+	background-position:center; 
+	background-repeat:repeat-y;
+}
+
+.conson_estados_pie{
+	background-image:url(../images/estados_pie.png); 
+	background-position:center; 
+	background-repeat:no-repeat;
+}

@@ -29,8 +29,12 @@ class ConsultaController extends Controller
 
     public function show($id)
     {
-       $data=DB::table('tracking')->select('callID',40650)->get();
-       var_dump($data); 
+
+       $data=DB::table('tracking')->where('callID',$id)->first();
+
+       return response()->json(["sms"=> true, "data"=>$data]); 
+       
+      
     }
 
     /**

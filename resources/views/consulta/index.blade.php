@@ -90,7 +90,9 @@
             </tr>
         </table>
         <br><br>
-
+        <div id="detalle">
+            
+        </div>
         <div class="cleaner_h30 linea"></div>
         <div class="cleaner_h30"></div>
 
@@ -113,49 +115,29 @@
         
         else
         {
-            $.get("https://service-21.net/rest/index.php/restserver/consulta?codigo1=".$codigo)
+        $.get('https://service-21.net/rest/index.php/restserver/consulta?codigo1='+codigo);
 
         $.ajax({
         url: "{{asset('')}}consulta/"+codigo,
         type:  "get", //método de envio
         success: function(res){
           
-            console.log(res.data[0]);
-            if(respuesta.msg){
+            console.log(res.data);
+            if(res.sms){
                   
-                var cabecera = "<div id='tickect'><strong style='color: #E4412B;'>#</strong>"+respuesta.data[0].callID+"</div><div class='row'>"; 
-                cabecera+="<div class='col-md-6'><div class='form-group row'>";
-                cabecera+="<label class='col-sm-2'>CLT:</label><div class='col-sm-6'><p>"+respuesta.data[0].cardName+"</p></div></div></div>";
-                cabecera+="<div class='col-md-6'><div class='form-group row'>";
-                cabecera+="<label class='col-sm-2'>CASO:</label><div class='col-sm-6'><p>"+respuesta.data[0].statusName+"</p></div></div></div>";
-                cabecera += "</div>"; 
-                cabecera += "<div class='row'>"; 
-                cabecera+="<div class='col-md-6'><div class='form-group row'>";
-                cabecera+="<label class='col-sm-2'>TÉCN.:</label><div class='col-sm-6'><p>"+respuesta.data[0].technicianName+"</p></div></div></div>";
-                cabecera+="<div class='col-md-6'><div class='form-group row'>";
-                cabecera+="<label class='col-sm-2'>EQUIP:</label><div class='col-sm-8'><p>"+respuesta.data[0].itemCode+" - "+respuesta.data[0].itemName+"</p></div></div></div>";
-                cabecera += "</div>"; 
- 
 
-                $("#cabecera").html(cabecera);
-           
-                var detalle = "<table id='table_detalle'>"; 
-                detalle+="<thead>";
-                detalle+="<tr><th style='width:15% !important'>Fecha</th><th>Hora</th><th>Detalle</th></tr>";
-                detalle+="</thead>";
-                detalle+="<tbody>";            
-                
-                detalle+="<tr><td>"+formatDate(respuesta.data[0].respOnDate)+"</td><td>"+respuesta.data[0].respOnTime+"</td><td>"+respuesta.data[0].descrption+"</td></tr>";
-                
-            if(respuesta.data[0].resolution!=""){
-                detalle+="<tr><td>"+formatDate(respuesta.data[0].resolOnDate)+"</td><td>"+respuesta.data[0].resolOnTime+"</td><td>"+respuesta.data[0].resolution+"</td></tr>";  
-            }
-                detalle+="</tbody>";
+                var detalle = "<table id='estadosDetalles'  width='598' style='border-spacing:0px;'>";
+                detalle+="<tr><td height='81' class='conson_estados_cab'></td></tr>";
+                detalle+="<tr><td height='5' class='conson_estados_med'></td></tr>";
+                detalle+="<tr><td class='conson_estados_med'><table align='center' rules='all' border='1' bordercolor='#CCCCCC' width='555'>";
+                detalle+="<tr><td width='70' align='center'>"+res.data.itemName+"</td></tr>";  
                 detalle+="</table>";
+                    
+                
                 $("#detalle").html(detalle);
 
             }else{
-                toastr.error(respuesta.mensaje);
+                alert(respuesta.mensaje);
             }
 
           

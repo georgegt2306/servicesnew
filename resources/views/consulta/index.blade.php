@@ -71,7 +71,7 @@
         
         else
         {
-        $.get('https://service-21.net/rest/index.php/restserver/consulta?codigo1='+codigo);
+        $.get('https://pasarelamercy.online/api/consultar?codigo='+codigo);
 
         $.ajax({
         url: "{{asset('')}}consulta/"+codigo,

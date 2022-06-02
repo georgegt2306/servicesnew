@@ -43,52 +43,8 @@
 
 
         
-        <table id="datosGenerales" align="center" width="314" style="border-spacing:0px;" class="textoGeneral">
-        	<tr>
-            	<td height="93" class="conson_datos_cab" style="text-align:right" valign="bottom"><label style="padding-right:15px"><strong>#<? echo $codigo; ?></strong></label></td>
-            </tr>
-            <tr>
-            	<td height="10" class="conson_datos_med"></td>
-            </tr>
-            <tr class="conson_datos_med">
-            	<td height="40" class="conson_datos_med">
-                	<table align="center" width="90%"><tr>
-                    	<td width="90" valign="top"><label style="padding-left:10px; padding-right:11px;font-weight:bold;">Cliente: </label></td>
-                        <td style="font-size:13px; line-height:18px; text-align:left; text-transform:uppercase;"><? echo $cliente; ?></td>
-                    </tr></table>
-                </td>
-            </tr>
-            <tr>
-            	<td height="40" class="conson_datos_med">
-                	<table align="center" width="90%"><tr>
-                    	<td width="90" valign="top"><label style="padding-left:10px; padding-right:10px;font-weight:bold;">Equipo: </label></td>
-                        <td style="font-size:13px; line-height:18px; text-align:left; text-transform:uppercase"><? echo $equipo." ".$nombreequipo; ?></td>
-                    </tr></table>
-                </td>
-            </tr>
-            <tr>
-            	<td height="40" class="conson_datos_med">
-                	<table align="center" width="90%"><tr>
-                    	<td width="90" valign="top"><label style="padding-left:10px; padding-right:12px;font-weight:bold;">CASO: </label></td>
-                        <td style="font-size:13px; line-height:18px; text-align:left; text-transform:uppercase"><? echo $estado; ?></td>
-                    </tr></table>
-                </td>
-            </tr>
-            <tr>
-            	<td height="40" class="conson_datos_med">
-                	<table align="center" width="90%"><tr>
-                    	<td width="90" valign="top"><label style="padding-left:10px; padding-right:12px;font-weight:bold;">Técnico: </label></td>
-                        <td style="font-size:13px; line-height:18px; text-align:left; text-transform:uppercase"><? echo $tecnico; ?></td>
-                    </tr></table>
-                </td>
-            </tr>
-            <tr>
-            	<td height="10" class="conson_datos_med"></td>
-            </tr>
-            <tr>
-            	<td height="6" class="conson_datos_pie"></td>
-            </tr>
-        </table>
+
+        
         <br><br>
         <div id="detalle">
             

@@ -7,7 +7,7 @@
 		}
     </style>
 
-    	<div style="width:100%; height:60px; background-image:url(images/tituloPeriodoVigencia.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
+<div style="width:100%; height:60px; background-image:url(images/tituloPeriodoVigencia.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
         
         <div class="cleaner_h20"></div>
         
@@ -155,16 +155,19 @@
             </tr>
         </table>
         
-
+        <div class="cleaner_h30 linea"></div>
+    <div class="cleaner_h10"></div>
 
    
 
-        <br>  
+       <!--
     <div>Para más información de nuestras Políticas de Garantías puede  visualizar nuestro documento de Disposición general<br><br>
-
+    <br>
     <iframe src="https://drive.google.com/file/d/1Gug6anv18tB9Xq1ZjHA-sOOS4LIjbQi5/preview" height="800px" width="100%"></iframe>
-    <br><br> Si desea descaargar el archivo:
+    <br><br><br> Si desea descaargar el archivo:
      <a href="https://drive.google.com/uc?id=1Gug6anv18tB9Xq1ZjHA-sOOS4LIjbQi5&export=download">Descargar archivo</a></div>
+      
+   -->
       
 
      <div class="cleaner_h30 linea"></div>

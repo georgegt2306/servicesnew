@@ -9,10 +9,6 @@
     </style>
 
 
-    
-
-
-
     	<div style="width:100%; height:60px; background-image:url(images/tituloSoporteTecnico.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
         
         <script type="application/javascript">
@@ -27,7 +23,7 @@
 			
 			/* -Texto Opcion 3- */
 			var opc3 = 'Ponemos a disposición de nuestros resellers la venta de repuestos para los equipos Epson vigentes.<br><br>Tenemos a su disposición las partes más comunes de equipos matriciales bajo pedido con la cancelación del 100% como Ribbon drive, bus de datos, etc. para cobertura de sus contratos de mantenimiento y reparación de sus clientes.  Consulte  nuestra disponibilidad y también pedidos especiales con entrega en un máximo de 45 días.<br><br>';
-			
+
 			function cambiar(indice)
 			{
 				

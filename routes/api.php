@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ConsultaApiController;
+use App\Http\Controllers\Api\InsertApiController;
 
 
 /*
@@ -16,4 +16,5 @@ use App\Http\Controllers\Api\ConsultaApiController;
 |
 */
 
-Route::get('/consultar', [ConsultaApiController::class, 'consulta']);
+Route::post('/insert', [InsertApiController::class, 'insert']);
+Route::post('/inserthistory', [InsertApiController::class, 'inserthistory']);

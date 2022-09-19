@@ -11,6 +11,7 @@
         <link type="text/css" rel="stylesheet" href="{{ asset('/widget/css/rcarousel.css')}}" />
         <link href="{{ asset('/css/style.css')}}" rel="stylesheet" type="text/css">
         <link href="css/liteaccordion.css" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ asset('js/toastr/toastr.min.css')}}">
         <script src="{{ asset('js/comun.js')}}" type="text/javascript"></script>
         <script type="text/javascript" src="{{ asset('/widget/lib/jquery-2.2.3.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/widget/lib/jquery.ui.core.min.js')}}"></script>
@@ -18,6 +19,7 @@
         <script type="text/javascript" src="{{ asset('/widget/lib/jquery.ui.rcarousel.min.js')}}"></script>
         <script type="text/javascript" src="js/jquery.roundabout.js"></script>
         <script src="js/liteaccordion.jquery.js"></script>
+      
     </head>
 
 
@@ -33,7 +35,25 @@
         </div>
     </body>
 
+    <script src="{{ asset('/js/toastr/toastr.min.js')}}"></script>
     <script>
+    toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "500",
+            "hideDuration": "1000",
+            "timeOut": "2000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
         function justNumbers(e){
         var keynum = window.event ? window.event.keyCode : e.which;
         if ((keynum == 8) || (keynum == 46))
@@ -41,6 +61,7 @@
             
         return /\d/.test(String.fromCharCode(keynum));
         }
+
     </script>
 </html>
 

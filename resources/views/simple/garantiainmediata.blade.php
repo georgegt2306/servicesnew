@@ -8,7 +8,7 @@
     </style>
 
 
-    	<div style="width:100%; height:60px; background-image:url(images/tituloGarantiaInmediata.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
+<div style="width:100%; height:60px; background-image:url(images/tituloGarantiaInmediata.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
         <img alt="" src="images/garinm.jpg" class="centrar" width="625">
         <div class="cleaner_h20"></div>
         <div class="centrar" style="width:625px">	
@@ -18,7 +18,7 @@
                   <!-- <a class="noenlace">2.</a> Se acepta su notificación por e-mail, fax o vía telefónica directamente a: <strong><a href="mailto:falcivar@siglo21.net"class="noenlace">falcivar@siglo21.net</a></strong><br><br> -->
 				<a class="noenlace">2.</a> Clientes de Provincias: requerimos su notificación telefónica máximo 72 horas posteriores a la fecha de despacho del producto. El reclamo y devolución deberá efectuarla directamente con <a class="noenlace">Service 21</a>.
 
-        	</p>
+  
         </div>
         <div class="cleaner_h20 linea"></div>
         <div class="cleaner_h20"></div>

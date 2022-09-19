@@ -11,7 +11,7 @@
     </style>
 
 
-    	<div style="width:100%; height:60px; background-image:url(images/tituloRetiroEquipo.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
+		<div style="width:100%; height:60px; background-image:url(images/tituloRetiroEquipo.png); background-size:contain; background-repeat:no-repeat; background-position:center"></div>
         <img alt="" src="images/retirarequipos.jpg" class="centrar" width="625px">
         <div class="cleaner_h20"></div>
         <div class="centrar" style="width:625px">	
